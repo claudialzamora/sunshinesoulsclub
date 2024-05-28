@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    background-color: rgb(255, 202, 41);
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.header-content {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #fff4b4;
+}
+
+/* Section styles */
+.image-block {
+    position: relative;
+    height: 80vh;
+    background-color: #FDF4E8;
+}
+
+.image-block img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.color-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 202, 41, 0.819);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.podcast-episodes {
+    padding: 50px;
+    background-color: #FDF4E8;
+    text-align: center;
+}
+
+.podcast-episodes h2 {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.episode {
+    margin-bottom: 30px;
+}
+
+.episode h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.episode audio {
+    display: block;
+    margin: 10px auto;
+}
+
+.episode p {
+    font-size: 20px;
+}
+
+/* Footer styles */
+footer {
+    position: relative

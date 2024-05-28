@@ -1,0 +1,217 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+    font-family: 'Lora', serif;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+/* Header styles */
+header {
+    position: relative;
+    background-color: rgb(255, 202, 41);
+    padding: 25px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.header-content {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: bold;
+    color: #333;
+    padding-right: 30px;
+    padding-bottom: 10px;
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu {
+    display: inline-block;
+}
+
+.menu li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.menu li:last-child {
+    margin-right: 0;
+}
+
+.menu a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: #fff4b4;
+}
+
+/* Section styles */
+.image-block {
+    position: relative;
+    height: 80vh;
+    background-color: #FDF4E8;
+}
+
+.image-block img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.color-block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 202, 41, 0.819);
+    color: white;
+    padding: 50px;
+    text-align: center;
+    font-size: 25px;
+    border-radius: 10px;
+}
+
+.merch-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 50px;
+    background-color: #FDF4E8;
+}
+
+.item {
+    margin: 20px;
+    text-align: center;
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+}
+
+.item h3 {
+    margin: 15px 0;
+    font-size: 24px;
+    color: #333;
+}
+
+.item p {
+    font-size: 20px;
+    color: #333;
+}
+
+.item button {
+    display: block;
+    width: 80%;
+    margin: 10px auto 20px auto;
+    padding: 10px;
+    background-color: rgb(255, 202, 41);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.item button:hover {
+    background-color: rgb(254, 227, 147);
+}
+
+/* Footer styles */
+footer {
+    position: relative;
+    background-color: rgb(255, 202, 41);
+    padding: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+}
+
+.contact-info {
+    text-align: center;
+    color: #333;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-info a {
+    color: #333;
+}
+
+.contact-info a:hover {
+    color: #fff4b4;
+}
+
+/* Mobile styles */
+@media only screen and (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background-color: rgb(255, 182, 81);
+        padding: 20px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 2;
+    }
+
+    .menu.active {
+        display: block;
+    }
+
+    .menu li {
+        display: block;
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .menu a {
+        display: block;
+        color: #333;
+        text-decoration: none;
+        padding: 10px 0;
+        border-bottom: 1px solid #fff4b4;
+    }
+
+    .item {
+        width: 90%;
+    }
+}
